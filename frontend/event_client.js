@@ -36,7 +36,7 @@ handleServerConnection = () => {
 
 // handle the messages received by the server
 handleServerMessage = msg => {
-	uiRenderMessage(msg);
+	uiRenderMessage(`Server said: ${msg}`);
 	if (msg === 'done') {
 		// if you don't handle a closing message, the process will
 		// start all over again.
